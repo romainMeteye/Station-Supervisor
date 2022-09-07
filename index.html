@@ -29,33 +29,33 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-platine mt-2 mb-2">
+      <nav class="navbar navbar-expand-lg navbar-light bg-platine d-flex mt-4 mb-4">
         <button id="openBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav d-flex justify-content-around w-100">
-              <div class="d-flex justify-content-start w-25">
+              <div class="d-flex justify-content-start align-items-center w-25">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Acceuil <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Présentation</a>
+                  <a class="nav-link" href="presentation.html">Présentation</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Produit</a>
+                  <a class="nav-link" href="product.html">Produit</a>
                 </li>
               </div>
-                <a class="navbar-brand" href="#"><img src="" alt="">LOGO</a>
-              <div class="d-flex justify-content-end w-25">
+                <a class="navbar-brand" href="#"><img class="header-logo" src="img/logoNV.png" alt=""></a>
+              <div class="d-flex justify-content-end align-items-center w-25">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Langue</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Connexion</a>
+                  <a class="nav-link" href="connect.html">Connexion</a>
                 </li>
               </div>
             </ul>
@@ -64,22 +64,22 @@
           <a id="closeBtn" href="#" class="close">&times;</a>
           <ul>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Acceuil <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Présentation</a>
+              <a class="nav-link" href="presentation.html">Présentation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Produit</a>
+              <a class="nav-link" href="product.html">Produit</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Langue</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Connexion</a>
+              <a class="nav-link" href="connect.html">Connexion</a>
             </li>
           </ul>
         </div>
@@ -88,59 +88,40 @@
 
     <footer class="bg-gray">
       <article class="d-flex flex-row align-items-center footer-card">
-        <div class="footer-logo">
-          <a><img src="" alt="">LOGO</a>
-        </div>
+        <a class="footer-logo"><img class="logo2" src="img/logoNH.png" alt=""></a>
         <div class="white-bar"></div>
-        <section class="footer-block d-flex align-items-center flex-column">
-          <h5>Contact</h5>
-          <div class="d-flex align-items-center flex-column">
-          <a class="link" href="#">Formulaire</a>
-          <a class="link" href="#">Instagramme</a>
-          <a class="link" href="#">Facebook</a>
-          <a class="link" href="#">LinkdIn</a>
+        <section class="footer-block d-flex flex-column">
+          <h6>Contact</h6>
+          <div class="d-flex flex-column">
+            <a class="link" href="#">Formulaire</a>
+            <a class="link" href="https://www.instagram.com"><img class="footer-icone" src="img/insta bleu.png" alt=""></a>
+            <a class="link" href="https://fr-fr.facebook.com"><img class="footer-icone" src="img/FB bleu .png" alt=""></a></a>
+            <a class="link" href="https://fr.linkedin.com"><img class="footer-icone" src="img/linkedin-bleu.png" alt=""></a>
           </div>
         </section>
-        <section class="footer-block d-flex align-items-center flex-column">
-          <h5>Présentation</h5>
-          <a class="link" href="#">Entreprise</a>
-          <a class="link" href="#">Equipe</a>
+        <section class="footer-block d-flex flex-column">
+          <h6>Présentation</h6>
+          <div class="d-flex flex-column">
+            <a class="link" href="presentation.html">Entreprise</a>
+            <a class="link" href="#">Equipe</a>
+          </div>
         </section>
-        <section class="footer-block d-flex align-items-center flex-column">
-          <h5>Service</h5>
-          <a class="link" href="#">Présentation</a>
-          <a class="link" href="#">Abonnement</a>
-          <a class="link" href="#">Prestation</a>
-        </section>
-        <section class="footer-block d-flex align-items-center flex-column">
-          <h5>Connexion</h5>
-          <a class="link" href="#">Client</a>
+        <section class="footer-block d-flex flex-column">
+          <h6>Service</h6>
+          <div class="d-flex flex-column">
+            <a class="link" href="product.html">Présentation</a>
+            <a class="link" href="#">Abonnement</a>
+            <a class="link" href="#">Prestation</a>
+          </div>
+          </section>
+        <section class="footer-block d-flex flex-column">
+          <h6>Connexion</h6>
+          <div class="d-flex flex-column">
+            <a class="link" href="">Client</a>
+          </div>
         </section>
       </article>
     </footer>
-
-    <!-- CARROUSEL -->
-    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="" class="d-block w-100" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="" class="d-block w-100" alt="">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
