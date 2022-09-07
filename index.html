@@ -29,15 +29,96 @@
 
   <body>
     <header>
-      <nav class="ong">
-        <div class="onglets">
-          <a href="">Accueil</a>
-          <a href="">Présentation</a>
-          <a href="">Produit</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-platine mt-2 mb-2">
+        <button id="openBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-around w-100">
+              <div class="d-flex justify-content-start w-25">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Acceuil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Présentation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Produit</a>
+                </li>
+              </div>
+                <a class="navbar-brand" href="#"><img src="" alt="">LOGO</a>
+              <div class="d-flex justify-content-end w-25">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Langue</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Connexion</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        <div id="mySidenav" class="sidenav bg-platine">
+          <a id="closeBtn" href="#" class="close">&times;</a>
+          <ul>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Acceuil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Langue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Connexion</a>
+            </li>
+          </ul>
         </div>
-        <div class="logo"></div>
       </nav>
     </header>
+
+    <footer class="bg-gray">
+      <article class="d-flex flex-row align-items-center footer-card">
+        <div class="footer-logo">
+          <a><img src="" alt="">LOGO</a>
+        </div>
+        <div class="white-bar"></div>
+        <section class="footer-block d-flex align-items-center flex-column">
+          <h5>Contact</h5>
+          <div class="d-flex align-items-center flex-column">
+          <a class="link" href="#">Formulaire</a>
+          <a class="link" href="#">Instagramme</a>
+          <a class="link" href="#">Facebook</a>
+          <a class="link" href="#">LinkdIn</a>
+          </div>
+        </section>
+        <section class="footer-block d-flex align-items-center flex-column">
+          <h5>Présentation</h5>
+          <a class="link" href="#">Entreprise</a>
+          <a class="link" href="#">Equipe</a>
+        </section>
+        <section class="footer-block d-flex align-items-center flex-column">
+          <h5>Service</h5>
+          <a class="link" href="#">Présentation</a>
+          <a class="link" href="#">Abonnement</a>
+          <a class="link" href="#">Prestation</a>
+        </section>
+        <section class="footer-block d-flex align-items-center flex-column">
+          <h5>Connexion</h5>
+          <a class="link" href="#">Client</a>
+        </section>
+      </article>
+    </footer>
+
     <!-- CARROUSEL -->
     <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
