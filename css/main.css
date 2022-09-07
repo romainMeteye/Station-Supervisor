@@ -87,7 +87,207 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.sec1{
+  display: flex;
+}
 
+.bloc1{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.img1{
+  height: 80%;
+  width: auto;
+}
+
+.left{
+  margin-right: 20%;
+}
+
+.right{
+  margin-top: 3vh;
+}
+
+.firsttxt{
+  margin: auto;
+  margin-top: 9vh;
+}
+
+.firsth{
+  font-size: 24px;
+  justify-content: left;
+}
+
+.secondh{
+  font-size: 16px;
+  margin-top: 5vh;
+  justify-content: left;
+}
+
+.button{
+  text-align: center;
+  margin: auto;
+  margin-top: 5vh;
+  margin-right: 7 vh;
+  width: 70%;
+}
+
+.button1{
+  padding: 15px;
+  border-radius: 40px;
+}
+
+.sec2{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-top:10vh ;
+}
+
+.bloc2{
+  display: flex;
+}
+
+.left2{
+  text-align: end;
+}
+
+.firsth2{
+  font-size: 32px;
+}
+
+.secondh2{
+  font-size: 24px;
+  margin-top: 10vh;
+}
+
+.thirdh2{
+  font-size: 16px;
+  margin-top: 5vh;
+}
+
+.img2{
+  height: 80%;
+  width: auto;
+  margin-left: 10vw;
+}
+
+.sec3{
+  display: flex;
+}
+
+.bloc3{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.img1{
+  height: 80%;
+  width: auto;
+}
+
+.left{
+  margin-right: 20%;
+}
+
+.right{
+  margin-top: 3vh;
+}
+
+.firsttxt{
+  margin: auto;
+  margin-top: 9vh;
+}
+
+.firsth3{
+  font-size: 24px;
+  justify-content: left;
+}
+
+.secondh3{
+  font-size: 16px;
+  margin-top: 5vh;
+  justify-content: left;
+}
+
+.button{
+  text-align: center;
+  margin: auto;
+  margin-top: 5vh;
+  margin-right: 7 vh;
+  width: 70%;
+}
+
+.button1{
+  padding: 15px;
+  border-radius: 40px;
+}
+
+@media screen and (max-width:1000px) {
+
+  .bloc1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20%;
+  }
+
+  .firsttxt{
+    margin: auto;
+  }
+
+  .img1{
+    width: 100%;
+    height: auto;
+    margin-left: 7vw;
+  }
+
+  .img2{
+    width: 100%;
+    height: auto;
+    margin-left: 7vw;
+  }
+
+  .bloc2{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin-top: 20%;
+  }
+
+  .firsttxt{
+    margin: auto;
+  }
+
+  .img1{
+    width: 100%;
+    height: auto;
+    margin-left: 7vw;
+  }
+
+  .bloc3{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20%;
+  }
+
+  .firsttxt{
+    margin: auto;
+  }
+
+  .img1{
+    width: 100%;
+    height: auto;
+    margin-left: 7vw;
+  }
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
