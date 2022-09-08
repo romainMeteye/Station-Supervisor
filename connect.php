@@ -22,7 +22,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/connect.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -80,84 +80,106 @@
                 <a class="nav-link" href="#">Langue</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="connect.php">Connexion</a>
+                <a class="nav-link" href="connect.html">Connexion</a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
-        <div id="mySidenav" class="sidenav bg-platine">
-          <a id="closeBtn" href="#" class="close">&times;</a>
-          <ul>
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="presentation.html">Présentation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product.html">Produit</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Langue</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="connect.html">Connexion</a>
-            </li>
-          </ul>
+
+<<<<<<< HEAD:connect.html
+    <footer class="bg-platine-rev">
+=======
+    <?php 
+    date_default_timezone_set('Europe/Paris');
+    $host='localhost';
+    $port=3306;
+    $dbname='station_supervisor';
+    $user='root';
+    $pwd='';
+   
+
+      $error = "";
+      $success = "";
+      session_start();
+      if(isset($_SESSION['ncompte']))
+    {
+        if($_SESSION['ncompte'] === "admin")
+        {
+            header("connect.php"); 
+        }
+    }
+
+    if(isset($_POST['submit'])){
+        $username = strtolower($_POST['ncompte']);
+        $password = $_POST['password'];
+        if($username === "admin" && $password === "admin")
+        {
+            $error = "";
+            $_SESSION["ncompte"] = $username;
+            header("Location: connect.php");
+        }
+        else
+        {
+            $error = "N° de compte ou mot de passe incorrect !";
+        }
+    }
+
+
+?>
+
+    <form action="" method="POST">
+        <div class="login1" id="log">
+            <h1>Connexion</h1>
+            <div class="logtxt">
+                <input type="text" placeholder="N° de compte" name="ncompte" value="" autocomplete="off">
+            </div>
+  
+            <div class="logtxt">
+                <input type="password" placeholder="Mot de passe" name="password" value="" autocomplete="off">
+            </div>
+  
+            <input class="buttonlog1" type="submit" name="submit" value="Connexion">
+            <p class="errormsg"><?php echo $error?></p>
         </div>
-      </nav>
-    </header>
-    <div class="contactform">
-      <form method="post" action="contact.php">
-        <label class="contactlab">Contact</label>
-        <input
-          type="text"
-          id="prenom"
-          name="prenom"
-          placeholder="Prénom"
-        />
-
-        <div class="hide col" id="name">
-          Veuillez rentrer votre prenom !
-        </div>
-
-
-        <input
-          type="text"
-          id="nom"
-          name="nom"
-          placeholder="Nom"
-        />
-
-        <div class="hide col" id="lname">
-          Veuillez rentrer votre nom !
-        </div>
-
-        <input
-          type="text"
-          id="mail"
-          name="mail"
-          placeholder="Mail"
-        />
-
-        <div class="hide col" id="imail">
-          Veuillez rentrer votre mail !
-        </div>
-
-        <textarea
-          id="com"
-          name="com"
-          placeholder="Votre message..."
-          style="height: 100px"
-        ></textarea>
-
-        <input type="submit" value="Envoyez" />
-      </form>
-    </div>
+    </form>
+    <footer class="bg-gray">
+>>>>>>> 003b60a09f741b81b47c1b4c26553fa43bd560f5:connect.php
+      <article class="d-flex flex-row align-items-center footer-card">
+        <a class="footer-logo" href="index.html"><img class="logo2" src="img/logoBV.png" alt=""></a>
+        <div class="white-bar"></div>
+        <section class="footer-block d-flex flex-column">
+          <h6>Contact</h6>
+          <div class="d-flex flex-column">
+            <a class="link" href="#">Formulaire</a>
+            <a class="link" href="https://www.instagram.com"><img class="footer-icone" src="img/insta bleu.png" alt=""></a>
+            <a class="link" href="https://fr-fr.facebook.com"><img class="footer-icone" src="img/FB bleu .png" alt=""></a></a>
+            <a class="link" href="https://fr.linkedin.com"><img class="footer-icone" src="img/linkedin-bleu.png" alt=""></a>
+          </div>
+        </section>
+        <section class="footer-block d-flex flex-column">
+          <h6>Présentation</h6>
+          <div class="d-flex flex-column">
+            <a class="link" href="presentation.html">Entreprise</a>
+            <a class="link" href="#">Equipe</a>
+          </div>
+        </section>
+        <section class="footer-block d-flex flex-column">
+          <h6>Service</h6>
+          <div class="d-flex flex-column">
+            <a class="link" href="product.html">Présentation</a>
+            <a class="link" href="#">Abonnement</a>
+            <a class="link" href="#">Prestation</a>
+          </div>
+          </section>
+        <section class="footer-block d-flex flex-column">
+          <h6>Connexion</h6>
+          <div class="d-flex flex-column">
+            <a class="link" href="connect.php">Client</a>
+          </div>
+        </section>
+      </article>
+    </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
