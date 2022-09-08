@@ -22,7 +22,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -86,6 +86,59 @@
       </nav>
     </header>
 
+    <?php 
+    date_default_timezone_set('Europe/Paris');
+    $host='localhost';
+    $port=3306;
+    $dbname='station_supervisor';
+    $user='root';
+    $pwd='';
+   
+
+      $error = "";
+      $success = "";
+      session_start();
+      if(isset($_SESSION['ncompte']))
+    {
+        if($_SESSION['ncompte'] === "admin")
+        {
+            header("connect.php"); 
+        }
+    }
+
+    if(isset($_POST['submit'])){
+        $username = strtolower($_POST['ncompte']);
+        $password = $_POST['password'];
+        if($username === "admin" && $password === "admin")
+        {
+            $error = "";
+            $_SESSION["ncompte"] = $username;
+            header("Location: connect.php");
+        }
+        else
+        {
+            $error = "N° de compte ou mot de passe incorrect !";
+        }
+    }
+
+
+?>
+
+    <form action="" method="POST">
+        <div class="login1" id="log">
+            <h1>Connexion</h1>
+            <div class="logtxt">
+                <input type="text" placeholder="N° de compte" name="ncompte" value="" autocomplete="off">
+            </div>
+  
+            <div class="logtxt">
+                <input type="password" placeholder="Mot de passe" name="password" value="" autocomplete="off">
+            </div>
+  
+            <input class="buttonlog1" type="submit" name="submit" value="Connexion">
+            <p class="errormsg"><?php echo $error?></p>
+        </div>
+    </form>
     <footer class="bg-gray">
       <article class="d-flex flex-row align-items-center footer-card">
         <a class="footer-logo"><img class="logo2" src="img/logoNH.png" alt=""></a>
