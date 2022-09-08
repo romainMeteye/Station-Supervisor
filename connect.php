@@ -22,7 +22,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/connect.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -87,7 +87,64 @@
         </nav>
       </header>
 
+<<<<<<< HEAD:connect.html
     <footer class="bg-platine-rev">
+=======
+    <?php 
+    date_default_timezone_set('Europe/Paris');
+    $host='localhost';
+    $port=3306;
+    $dbname='station_supervisor';
+    $user='root';
+    $pwd='';
+   
+
+      $error = "";
+      $success = "";
+      session_start();
+      if(isset($_SESSION['ncompte']))
+    {
+        if($_SESSION['ncompte'] === "admin")
+        {
+            header("connect.php"); 
+        }
+    }
+
+    if(isset($_POST['submit'])){
+        $username = strtolower($_POST['ncompte']);
+        $password = $_POST['password'];
+        if($username === "admin" && $password === "admin")
+        {
+            $error = "";
+            $_SESSION["ncompte"] = $username;
+            header("Location: connect.php");
+        }
+        else
+        {
+            $error = "N° de compte ou mot de passe incorrect !";
+        }
+    }
+
+
+?>
+
+    <form action="" method="POST">
+        <div class="login1" id="log">
+            <h1>Connexion</h1>
+            <div class="logtxt">
+                <input type="text" placeholder="N° de compte" name="ncompte" value="" autocomplete="off">
+            </div>
+  
+            <div class="logtxt">
+                <input type="password" placeholder="Mot de passe" name="password" value="" autocomplete="off">
+            </div>
+  
+            <input class="buttonlog1" type="submit" name="submit" value="Connexion">
+            <p class="errormsg"><?php echo $error?></p>
+        </div>
+    </form>
+    <footer class="bg-gray">
+>>>>>>> 003b60a09f741b81b47c1b4c26553fa43bd560f5:connect.php
       <article class="d-flex flex-row align-items-center footer-card">
         <a class="footer-logo" href="index.html"><img class="logo2" src="img/logoBV.png" alt=""></a>
         <div class="white-bar"></div>

@@ -17,6 +17,7 @@ html {
   line-height: 1.4;
 }
 
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -283,7 +284,7 @@ textarea {
 }
 
 .img2{
-  height: 80%;
+  height: 40vh;
   width: auto;
   margin-left: 10vw;
 }
@@ -321,7 +322,11 @@ textarea {
   background-color: #DEE7E7;
   padding: 3vw;
   margin: auto;
-  margin-top: 4vh;
+  margin-top: -4vh;
+}
+
+.left2{
+  margin-bottom: 10vh;
 }
 
 .firsth3{
