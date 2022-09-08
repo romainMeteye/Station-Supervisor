@@ -22,74 +22,72 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/connect.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-platine d-flex mt-4 mb-4">
-         <button id="openBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img class="header-logo-res" src="img/logoBH.png" alt=""></a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav d-flex justify-content-around w-100">
-                <div class="d-flex justify-content-start align-items-center w-25">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Acceuil <span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="presentation.html">Présentation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="product.html">Produit</a>
-                  </li>
-                </div>
-                  <a class="navbar-brand" href="index.html"><img class="header-logo" src="img/logoBH.png" alt=""></a>
-                <div class="d-flex justify-content-end align-items-center w-25">
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Langue</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="connect.php">Connexion</a>
-                  </li>
-                </div>
-              </ul>
-            </div>
-          <div id="mySidenav" class="sidenav bg-platine">
-            <a id="closeBtn" href="#" class="close">&times;</a>
-            <ul>
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="presentation.html">Présentation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product.html">Produit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Langue</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="connect.html">Connexion</a>
-              </li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-platine d-flex mt-4 mb-4">
+       <button id="openBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img class="header-logo-res" src="img/logoBH.png" alt=""></a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-around w-100">
+              <div class="d-flex justify-content-start align-items-center w-25">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Acceuil <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="presentation.html">Présentation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">Produit</a>
+                </li>
+              </div>
+                <a class="navbar-brand" href="index.html"><img class="header-logo" src="img/logoBH.png" alt=""></a>
+              <div class="d-flex justify-content-end align-items-center w-25">
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Langue</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="connect.php">Connexion</a>
+                </li>
+              </div>
             </ul>
           </div>
-        </nav>
-      </header>
+        <div id="mySidenav" class="sidenav bg-platine">
+          <a id="closeBtn" href="#" class="close">&times;</a>
+          <ul>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Acceuil <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="presentation.html">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Produit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Langue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connect.php">Connexion</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<<<<<<< HEAD:connect.html
-    <footer class="bg-platine-rev">
-=======
     <?php 
     date_default_timezone_set('Europe/Paris');
     $host='localhost';
@@ -143,8 +141,8 @@
             <p class="errormsg"><?php echo $error?></p>
         </div>
     </form>
-    <footer class="bg-gray">
->>>>>>> 003b60a09f741b81b47c1b4c26553fa43bd560f5:connect.php
+
+    <footer class="bg-platine-rev">
       <article class="d-flex flex-row align-items-center footer-card">
         <a class="footer-logo" href="index.html"><img class="logo2" src="img/logoBV.png" alt=""></a>
         <div class="white-bar"></div>
