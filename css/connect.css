@@ -28,7 +28,6 @@ html, body {
     color: inherit;
   }
   .header-logo {
-
     /* position: absolute; */
     height: 18vh;
     background-color: #9F9F9F;
@@ -109,60 +108,47 @@ html, body {
     font-size: 36px;
   }
 
-  .contactform{
+.login1{
     width: 65%;
     margin: auto;
-  }
-
-.contactlab{
-    font-size: 32px;
-}
-
-  input[type=text], select, textarea {
-    background-color: rgba(95, 137, 199, 0.3);
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: none;
+    margin-top: 10vh;
+    padding-bottom: 20vh;
   }
   
-  input[type=submit] {
-    background-color: rgba(113, 223, 110, 0.4);
-    color: rgba(135, 134, 134, 1);
+  #log input[type=text] {
+    width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: rgba(95, 137, 199, 0.3);
+      border-radius: 10px;
+      box-sizing: border-box;
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+      resize: none;
+  }
+  
+  #log input[type=password] {
+    width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: rgba(95, 137, 199, 0.3);
+      border-radius: 10px;
+      box-sizing: border-box;
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+      resize: none;
+  }
+  
+  .buttonlog1{
+    background-color:rgba(113, 223, 110, 0.4);
+    margin-top: 1.3vh;
+    border: none;
+    border-radius: 10px;
     padding: 2vh;
     padding-left: 10vh;
     padding-right: 10vh;
-    margin-left: 51.7vw;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
   }
   
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  .container {
-    margin: auto;
-    margin-top: 6.5vh;
-    margin-bottom: 11vh;
-    max-width: 40%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    color: #FF6600;
-  }
-
-  .hide{
-    display: none;
-  }
-
-  .col{
-    text-align: center;
-    color: red;
-    font-weight: 800;
+  .errormsg{
+    margin-top: 2vh;
   }
