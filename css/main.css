@@ -86,9 +86,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   
+
+   html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
    .bg-platine {
-    background-color:#DEE7E7;
+    background: linear-gradient(to left,#DEE7E7, #D9D9D9);
+   }
+   .bg-platine-rev {
+    background: linear-gradient(to bottom left,#DEE7E7, #FFFFFF);
    }
    .bg-glauque {
     background-color: #5F89C7;
@@ -110,16 +117,20 @@ textarea {
    }
    a {
     color: inherit;
+    text-decoration: none;
   }
   .header-logo {
     /* position: absolute; */
     height: 18vh;
-    background-color: #9F9F9F;
+    margin-top: 1.5vh;
   } 
+  .header-logo-res {
+    display: none;
+  }
   .logo2 {
     height: 32vh;
     width: 17vw;
-    margin-left: 1vw;
+    margin-left: 3vw;
   }
   .navbar {
     height: 12vh;
@@ -366,7 +377,45 @@ background: linear-gradient(37deg, rgba(95,137,199,1) 0%, rgba(113,223,110,1) 10
   text-align: center;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:991px) {
+
+  .header-logo-res {
+    display: block;
+    height: 12vh;
+    margin-top: -2.2vh;
+  }
+  .footer-card {
+    height: 30vh;
+    width: 100vw;
+   }
+  .footer-block {
+    width: 15%;
+    text-align: start;
+    height: 80%;
+    margin: auto;
+    font-size: x-small;
+   }
+   .footer-logo {
+    text-align: center;
+    margin-right: 1vw;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7vh;
+   }
+   .logo2 {
+    height: 15vh;
+    width: 100%;
+    margin-left: 1vw;
+  }
+  .footer-icone {
+    height: 4vh;
+    margin-top: 0.5vh;
+   }
+   h6 {
+    font-size: x-small;
+    text-decoration: double;
+   }
 
   .bloc1{
     display: flex;
