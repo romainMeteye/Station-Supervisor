@@ -133,6 +133,8 @@ body{
     padding: 1.5vh;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-top: 3vh;
+    margin-left: 5vw;
 }
 
 @media screen and (max-width:1300px) {
