@@ -29,63 +29,74 @@
   </head>
   
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-platine d-flex mt-4 mb-4">
+    <header class="d-flex flex-column align-items-center header-accueil">
+      <nav class="navbar navbar-expand-lg navbar-light bg-nav d-flex mb-4">
          <button id="openBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
+           <span class=""><img class="header-burger" src="img/menuburgerblanc.png" alt=""></span>
             </button>
             <a class="navbar-brand" href="index.html"><img class="header-logo-res" src="img/logoBH.png" alt=""></a>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav d-flex justify-content-around w-100">
                 <div class="d-flex justify-content-start align-items-center w-25">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Accueil <span class="sr-only"></span></a>
+                    <a class="nav-link text-white" href="index.html">Accueil <span class="sr-only"></span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="presentation.html">Présentation</a>
+                    <a class="nav-link text-white" href="presentation.html">Présentation</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="product.html">Produit</a>
+                    <a class="nav-link text-white" href="product.html">Produit</a>
                   </li>
                 </div>
-                  <a class="navbar-brand" href="index.html"><img class="header-logo" src="img/logoBH.png" alt=""></a>
+                  <a class="navbar-brand" href="index.html"><img class="header-logo" src="img/LOGOTCH.png" alt=""></a>
                 <div class="d-flex justify-content-end align-items-center w-25">
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Langues
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" id="frTranslator" href="#">Français</a>
+                      <a class="dropdown-item" id="enTranslator" href="#">English</a>
+                    </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Langues</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="connect.php">Connexion</a>
+                    <a class="nav-link text-white" href="connect.php">Connexion</a>
                   </li>
                 </div>
               </ul>
             </div>
-          <div id="mySidenav" class="sidenav bg-platine">
+          <div id="mySidenav" class="sidenav bg-nav2">
             <a id="closeBtn" href="#" class="close">&times;</a>
             <ul>
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Acceuil <span class="sr-only"></span></a>
+                <a class="nav-link text-white" href="index.html">Accueil <span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="presentation.html">Présentation</a>
+                <a class="nav-link text-white" href="presentation.html">Présentation</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product.html">Produit</a>
+                <a class="nav-link text-white" href="product.html">Produit</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link text-white" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Langues</a>
+                <a class="nav-link text-white" href="#">Langues</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="connect.php">Connexion</a>
+                <a class="nav-link text-white" href="connect.php">Connexion</a>
               </li>
             </ul>
           </div>
         </nav>
+        <article class="header-box">
+          <h3 class="mt-3">Station Supervisor</h3>
+          <h5 class="mb-3">vous propose un service de bonne qualité</h5>
+          <button class="mb-4"><div class="m-2">Découvrir notre service</div></button>
+        </article>
       </header>
       <section class="sec1">
         <div class="bloc1">
@@ -137,36 +148,38 @@
     
     <footer class="bg-platine-rev">
       <article class="d-flex flex-row align-items-center footer-card">
-        <a class="footer-logo"><img class="logo2" src="img/logoBV.png" alt=""></a>
+        <a class="footer-logo" href="index.html"><img class="logo2" src="img/LOGOTCV.png" alt=""></a>
         <div class="white-bar"></div>
         <section class="footer-block d-flex flex-column">
-          <h6>Contact</h6>
+          <h6 class="text-white">Contact</h6>
           <div class="d-flex flex-column">
-            <a class="link" href="#">Formulaire</a>
-            <a class="link" href="https://www.instagram.com"><img class="footer-icone" src="img/insta bleu.png" alt=""></a>
-            <a class="link" href="https://fr-fr.facebook.com"><img class="footer-icone" src="img/FB bleu .png" alt=""></a></a>
-            <a class="link" href="https://fr.linkedin.com"><img class="footer-icone" src="img/linkedin-bleu.png" alt=""></a>
+            <a class="link text-white" href="#">Formulaire</a>
+            <div class="d-flex flex-row icones">
+              <a class="link" href="https://www.instagram.com"><img class="footer-icone" src="img/instavertglowdefou.png" alt=""></a>
+              <a class="link" href="https://fr-fr.facebook.com"><img class="footer-icone" src="img/facebook.png" alt=""></a></a>
+              <a class="link" href="https://fr.linkedin.com"><img class="footer-icone" src="img/linkedin.png" alt=""></a>
+            </div>
           </div>
         </section>
         <section class="footer-block d-flex flex-column">
-          <h6>Présentation</h6>
+          <h6 class="text-white">Présentation</h6>
           <div class="d-flex flex-column">
-            <a class="link" href="presentation.html">Entreprise</a>
-            <a class="link" href="#">Equipe</a>
+            <a class="link text-white" href="presentation.html">Entreprise</a>
+            <a class="link text-white" href="#">Equipe</a>
           </div>
         </section>
         <section class="footer-block d-flex flex-column">
-          <h6>Service</h6>
+          <h6 class="text-white">Service</h6>
           <div class="d-flex flex-column">
-            <a class="link" href="product.html">Présentation</a>
-            <a class="link" href="#">Abonnement</a>
-            <a class="link" href="#">Prestation</a>
+            <a class="link text-white" href="product.html">Présentation</a>
+            <a class="link text-white" href="#">Abonnement</a>
+            <a class="link text-white" href="#">Prestation</a>
           </div>
           </section>
         <section class="footer-block d-flex flex-column">
-          <h6>Connexion</h6>
+          <h6 class="text-white text-decoration-underline text-">Connexion</h6>
           <div class="d-flex flex-column">
-            <a class="link" href="connect.php">Client</a>
+            <a class="link text-white" href="connect.php">Client</a>
           </div>
         </section>
       </article>

@@ -79,6 +79,10 @@ body{
     margin-bottom: 5vh;
 }
 
+.gb {
+    height: 36.5vh;
+}
+
 @media screen and (max-width:991px) {
 
     .firsttxt h1{
