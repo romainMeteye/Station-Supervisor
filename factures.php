@@ -41,7 +41,7 @@ else
   </head>
 
   <body id="factures">
-  <header class="d-flex flex-column align-items-center header-accueil">
+  <header class="d-flex flex-column align-items-center">
     <nav class="navbar navbar-expand-lg navbar-light bg-nav d-flex mb-4">
        <button id="openBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class=""><img class="header-burger" src="img/menuburgerblanc.png" alt=""></span>
