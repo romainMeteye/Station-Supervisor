@@ -104,11 +104,6 @@ else
           </ul>
         </div>
       </nav>
-      <article class="header-box">
-        <h3 class="mt-3">Station Supervisor</h3>
-        <h5 class="mb-3">vous propose un service de bonne qualité</h5>
-        <button class="mb-4"><div class="m-2">Découvrir notre service</div></button>
-      </article>
     </header>
 
     <h1 class=h1>Vos factures</h1>

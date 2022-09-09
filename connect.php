@@ -1,3 +1,41 @@
+<?php 
+    date_default_timezone_set('Europe/Paris');
+    $host='localhost';
+    $port=3306;
+    $dbname='station_supervisor';
+    $user='root';
+    $pwd='';
+   
+
+      $error = "";
+      $success = "";
+      session_start();
+      if(isset($_SESSION['ncompte']))
+    {
+        if($_SESSION['ncompte'] === "admin")
+        {
+            header("Location: factures.php"); 
+        }
+    }
+
+    if(isset($_POST['submit'])){
+        $username = strtolower($_POST['ncompte']);
+        $password = $_POST['password'];
+        if($username === "admin" && $password === "admin")
+        {
+            $error = "";
+            $_SESSION["ncompte"] = $username;
+            header("Location: factures.php");
+        }
+        else
+        {
+            $error = "N° de compte ou mot de passe incorrect !";
+        }
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="">
   <head>
@@ -94,43 +132,7 @@
       </nav>
     </header>
 
-    <?php 
-    date_default_timezone_set('Europe/Paris');
-    $host='localhost';
-    $port=3306;
-    $dbname='station_supervisor';
-    $user='root';
-    $pwd='';
-   
-
-      $error = "";
-      $success = "";
-      session_start();
-      if(isset($_SESSION['ncompte']))
-    {
-        if($_SESSION['ncompte'] === "admin")
-        {
-            header("Location: factures.php"); 
-        }
-    }
-
-    if(isset($_POST['submit'])){
-        $username = strtolower($_POST['ncompte']);
-        $password = $_POST['password'];
-        if($username === "admin" && $password === "admin")
-        {
-            $error = "";
-            $_SESSION["ncompte"] = $username;
-            header("Location: factures.php");
-        }
-        else
-        {
-            $error = "N° de compte ou mot de passe incorrect !";
-        }
-    }
-
-
-?>
+    
 
     <form action="" method="POST">
         <div class="login1" id="log">
