@@ -104,7 +104,7 @@
     {
         if($_SESSION['ncompte'] === "admin")
         {
-            header("connect.php"); 
+            header("Location: factures.php"); 
         }
     }
 
@@ -115,7 +115,7 @@
         {
             $error = "";
             $_SESSION["ncompte"] = $username;
-            header("Location: connect.php");
+            header("Location: factures.php");
         }
         else
         {

@@ -1,14 +1,33 @@
+  body{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
   .contactform{
-    width: 65%;
+    width: 50%;
     margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
 
 .contactlab{
     font-size: 32px;
+    color: white;
 }
 
   input[type=text], select, textarea {
-    background-color: rgba(95, 137, 199, 0.3);
+    background-color: rgba(222, 231, 231, 1);
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+  }
+
+  input[type=email], select, textarea {
+    background-color: rgba(222, 231, 231, 1);
     width: 100%;
     padding: 12px;
     border: none;
@@ -20,12 +39,12 @@
   }
   
   input[type=submit] {
-    background-color: rgba(113, 223, 110, 0.4);
-    color: rgba(135, 134, 134, 1);
+    background-color: rgba(113, 223, 110, 1);
+    color: rgb(255, 255, 255);
     padding: 2vh;
     padding-left: 10vh;
     padding-right: 10vh;
-    margin-left: 51.7vw;
+    margin-left: 37.4vw;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -35,6 +54,10 @@
     background-color: #45a049;
   }
   
+  .cguu{
+    display: flex;
+  }
+
   .container {
     margin: auto;
     margin-top: 6.5vh;
@@ -52,6 +75,30 @@
 
   .col{
     text-align: center;
-    color: red;
-    font-weight: 800;
+    color: #ffad17;
+  }
+
+  .cgus{
+    color: white;
+    font-size: 20px;
+    margin-left: 2vw;
+  }
+
+  form .fake{display:none}
+
+
+  @media screen and (max-width:991px) {
+    input[type=submit] {
+        background-color: rgba(113, 223, 110, 1);
+        color: rgb(255, 255, 255);
+        padding: 2vh;
+        padding-left: 10vh;
+        padding-right: 10vh;
+        margin-left: 10vw;
+        margin-top: 2vh;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
   }

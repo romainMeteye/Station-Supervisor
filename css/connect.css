@@ -1,5 +1,13 @@
+body{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1{
+  color: white;
+}
+
 .login1{
-    width: 65%;
+    width: 50%;
     margin: auto;
     margin-top: 10vh;
     padding-bottom: 20vh;
@@ -9,7 +17,7 @@
     width: 100%;
       padding: 12px;
       border: none;
-      background-color: rgba(95, 137, 199, 0.3);
+      background-color:  rgba(222, 231, 231, 1);
       border-radius: 10px;
       box-sizing: border-box;
       margin-top: 1vh;
@@ -21,7 +29,7 @@
     width: 100%;
       padding: 12px;
       border: none;
-      background-color: rgba(95, 137, 199, 0.3);
+      background-color:  rgba(222, 231, 231, 1);
       border-radius: 10px;
       box-sizing: border-box;
       margin-top: 1vh;
@@ -30,8 +38,10 @@
   }
   
   .buttonlog1{
-    background-color:rgba(113, 223, 110, 0.4);
+    background-color:rgba(113, 223, 110, 1);
+    color: white;
     margin-top: 1.3vh;
+    margin-left: 18vw;
     border: none;
     border-radius: 10px;
     padding: 2vh;
@@ -41,4 +51,16 @@
   
   .errormsg{
     margin-top: 2vh;
+    text-align: center;
+    color: white;
+  }
+
+  @media screen and (max-width:991px) {
+    .buttonlog1{
+      margin-left: 10vw;
+    }
+
+    .errormsg{
+      margin-left: 12.5vw;
+    }
   }
