@@ -1,0 +1,56 @@
+#factures{
+   background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display:flex;
+    flex-direction: column;
+ flex-wrap: wrap;
+ max-width: 100%;
+}
+
+#factures h1{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+}
+
+body #factures a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+#factures td{
+    word-break: break-all;
+    max-width: 14vw;
+
+}
+
+#factures #logoutbutton{
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10vh;
+    width: 80%;
+}
+
+td{
+    text-align: center;
+    border-width: 1;
+}
+
+tr{
+    border-width: 1;
+}
+
+.tdtitle{
+    color: rgba(113, 223, 110, 1);
+}
+
+table{
+    width: 80%;
+    margin: auto;
+}
+
+table, tr, td {
+    border: 1px solid;
+}
