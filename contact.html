@@ -22,6 +22,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/contact.css" />
 
     <meta name="theme-color" content="#fafafa" />
@@ -114,6 +115,9 @@
     </header>
     <div class="contactform">
       <form method="post" action="contact.php">
+
+        <div class="fake"><input type ="text" input name="fake-field"></div>
+
         <label class="contactlab">Contact</label>
         <input
           type="text"
@@ -139,7 +143,7 @@
         </div>
 
         <input
-          type="text"
+          type="email"
           id="mail"
           name="mail"
           placeholder="Mail"
@@ -153,9 +157,16 @@
           id="com"
           name="com"
           placeholder="Votre message..."
-          style="height: 100px"
+          style="height: 25vh"
         ></textarea>
 
+        <div class="hide col" id="conmess">
+          Veuillez rentrer votre message !
+        </div>
+        <div class="cguu">
+          <input type="checkbox" name="cgu_accept_ins" id="cgu"  checked required/>
+          <label for="cgu" class="cgus"> J'accepte de partager certaines de mes données de compte et de navigation avec Adot, partenaire de Veepee afin de recevoir des publicités personnalisées</label>
+        </div>
         <input type="submit" value="Envoyez" />
       </form>
     </div>
