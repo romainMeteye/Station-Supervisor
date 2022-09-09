@@ -237,6 +237,8 @@ textarea {
 
   }
 
+
+
 .bloc1{
   display: flex;
   width: 80%;
@@ -250,6 +252,7 @@ textarea {
 .text-environement {
   color: #fff;
   margin-right: 7vw;
+  width: 45vw;
 }
 
 .services {
@@ -381,9 +384,6 @@ background: linear-gradient(37deg, rgba(95,137,199,1) 0%, rgba(113,223,110,1) 10
 .img-carousel {
   height: 15vh;
 }
-.carousel-inner {
-  width: 100vw;
-}
 
 .carousel-control-next{
   margin-left: 20vw;
@@ -393,12 +393,21 @@ background: linear-gradient(37deg, rgba(95,137,199,1) 0%, rgba(113,223,110,1) 10
   margin-right: 20vw;
 }
 
-.carousel-inner{
+.carousel-inner {
   width: 50%;
   margin: auto;
   margin-top: 10vh;
   margin-bottom: 5vh;
 }
+.carousel-text {
+  margin-top: 2vh;
+}
+
+.carousel-inner .carousel-item {
+  border-radius: 10px;
+  flex-direction: row;
+}
+
 .partenaire{
   text-align: center;
   height: 75vh;
@@ -411,7 +420,10 @@ font-weight: 700;
 line-height: 31px;
 letter-spacing: 0em;
 text-align: center;
-
+width: 25%;
+}
+.textalt {
+  width: 50vw;
 }
 
 @media screen and (max-width:991px) {
@@ -501,9 +513,12 @@ text-align: center;
     margin-bottom: 7vh;
   }
 
+  .partenaire-text {
+    width: 75vw;
+  }
+
   .left{
-    margin: auto;
-    width: 80%;
+    margin-right: none;
   }
 
   .right2{
@@ -513,6 +528,49 @@ text-align: center;
 
   .sec2{
     width: 100%;
+  }
+
+  .img-carousel {
+    height: 15vh;
+  }
+  
+  .carousel-control-next{
+    margin-left: 20vw;
+  }
+  
+  .carousel-control-prev{
+    margin-right: 20vw;
+  }
+  
+  .carousel-inner {
+    width: 50%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+  .carousel-inner .carousel-item {
+    border-radius: 10px;
+    flex-direction: column;
+  }
+  .text-environement {
+    width: 96vw;
+    text-align: center;
+    margin-right: 2vw;
+    margin-left: 2vw; 
+  }
+  .textalt {
+    width: 94vw;
+  }
+  .img-environement{
+    width: 100vw;
+  }
+  .contactbtnpost {
+    display: flex;
+    justify-content: center;
+  }
+  .icones {
+    flex-basis: 100%;
+    height: 0;
   }
 }
 /* ==========================================================================
